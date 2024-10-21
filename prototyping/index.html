@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet burge step-by-step | Figma</title>
+    <style>
+      html {
+        font-size: 18px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        line-height: 1.5;
+      }
+      body {
+        max-width: 65rem;
+        padding: 0 3em;
+        margin: 2rem auto;
+      }
+      table {
+        border-collapse: collapse;
+        display: block;
+        max-width: 30em;
+      }
+      tr {
+        border-bottom: 1px solid #cccccc;
+      }
+
+      td,th {
+        text-align: left;
+        padding: 1em 2em;
+        width: calc(100% / 3);
+      }
+    </style>
+  </head><body><h1 id="as-a-class-build-a-figma-prototype-for-planet-diner">As a class, build a Figma prototype for Planet Diner</h1>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>be sure to name components</li>
+<li>be sure to name layers</li>
+<li>be sure to name frames</li>
+<li>To duplicate an art board, <kbd>alt</kbd> + click + drag on Windows, <kbd>option</kbd> + click + drag on Mac</li>
+<li>check the properties pane to make sure things are positioned and appear as they should</li>
+</ul>
+<p>Before you start, look at what you have to do and plan how you will proceed. Study the mock-up. What do you need to do here? Look for anything that is used more than once. These are candidates for reusable components or styles.</p>
+<h2 id="pages">Pages</h2>
+<h3 id="cover-page">Cover page</h3>
+<p>This is what gets displayed when you look in your Figma projects. It’s a good place for a thumbnail of your project.</p>
+<h3 id="content-page">Content page</h3>
+<p>Typically, I would not have a content page. It is here to save student’s time. You can drag what you need into you prototypes without having to import text and images.</p>
+<h3 id="assets-page">Assets page</h3>
+<p>These are images and illustrations I have imported into the project. I usually turn these into components. That way, if I need to swap something out, it will update everywhere.</p>
+<h3 id="design-system-page">Design system page</h3>
+<p>These are base elements that get applied to components. Typically, it’s colours and typography. Technically components are also part of the design system. I prefer to keep these base elements separate.</p>
+<h3 id="components">Components</h3>
+<p>These are the elements that get reuses throughout the project. As a general rule of thumb, if you see something used more than once, make a component out of it.</p>
+<h3 id="mobile">Mobile</h3>
+<p>This is where I build the prototype. I do one prototype per page. So a desktop version would be on its own page.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>There is a menu on every page, including home. I note from the mockup that the menu has an open state and a closed state. When I look at the components page, I see that there are components for the header and menu states, but this can be taken further by having components that combine the header and the menu. The first thing I do is make two new components.</p>
+<h2 id="header-with-menu-components">Header with menu components</h2>
+<ol type="1">
+<li>go to components page</li>
+<li>open the assets pane so you can see components</li>
+<li>drag an instance of the header onto the screen</li>
+<li>drag an instance of the hamburger menu icon and place it on the image, properly aligned</li>
+<li>drag another instance of the header onto the screen</li>
+<li>drag an instance of the menu open and place it over the header image from step 5</li>
+<li>Align the header image from step 3 and step 5, this will make it easier to align the menu</li>
+<li>under the Figma menu, go to view and select <em>Rulers</em></li>
+<li>Place your cursor on the ruler at the top and drag a guide down to where you want the menu icons on the header image</li>
+<li>align both menus vertically to the guide</li>
+<li>center each menu with the header image it’s on</li>
+<li>select the image and closed menu, make a component called <code>header/nav-closed</code></li>
+<li>select the image and open menu, make a component called <code>header/nav-open</code></li>
+</ol>
+<blockquote>
+<p>In a future class, we will learn how to make component sets. Component sets extend the power of components in Figma</p>
+</blockquote>
+<h2 id="build-the-home-page-with-the-navigation-closed">Build the home page with the navigation closed</h2>
+<ol type="1">
+<li>delete the header image on the frame</li>
+<li>delete the hamburger menu on the frame</li>
+<li>from the asset panel, drag an instance of <code>header/nav-closed</code> and place it in the frame</li>
+<li>in the layers panel, drag the header image so it is under the intro text</li>
+<li>rename the home frame to <em>Header/nav-open</em></li>
+<li>make a copy of frame <em>Header/nav-open</em> and call it <em>Header/nav-closed</em></li>
+</ol>
+<h2 id="build-the-home-page-with-the-navigation-open">Build the home page with the navigation open</h2>
+<ol type="1">
+<li>on <em>Header/nav-closed</em> replace the header with the <em>Header/nav-open</em> component</li>
+<li>fix the layer order</li>
+<li>move the intro text and footer down so they leave space below the navigation menu</li>
+<li>select the entire <em>Header/nav-open</em> and resize it so the footer is completely within the frame</li>
+</ol>
+<h2 id="build-the-pizza-menu-closed-page">Build the pizza menu closed page</h2>
+<ol type="1">
+<li>Add a new frame, use iPhone 13 &amp; 14, 390 x 844</li>
+<li>Name the frame <em>pizza/menu closed</em></li>
+<li>With the frame still selected, select the colour <em>page/background</em> (hover over the fill section on the properties panel, a grid icon will appear. Click this to see the colours available in the library)</li>
+<li>Drag components for <em>Header/nav-closed</em>, <em>menu items &gt; Pizza</em> and <em>Footer</em> onto the artboard, position and align</li>
+<li>resize the frame so the footer is in frame</li>
+</ol>
+<h2 id="build-the-pizza-menu-open-page">Build the pizza menu open page</h2>
+<ol type="1">
+<li>Follow the same steps you did for <em>Pizza menu closed</em> but use the <em>Header/nav-open</em> component</li>
+<li>name the frame <em>Pizza/menu-open</em></li>
+</ol>
+<h2 id="build-burgers-menu-open-and-burgers-menu-closed-frames">Build Burgers menu open and burgers menu closed frames</h2>
+<p>Follow the same steps you took for <em>Pizza/menu-open</em> and <em>Pizza/menu-closed</em>. Use the <em>Menu item &gt; burgers component</em> and use the same naming pattern for the frame names.</p>
+<h2 id="build-dessert-menu-open-and-dessert-menu-closed-frames">Build Dessert menu open and dessert menu closed frames</h2>
+<p>Follow the same steps you took for <em>Pizza/menu-open</em> and <em>Pizza/menu-closed</em>. Use the <em>Menu item &gt; desserts component</em> and use the same naming pattern for the frame names.</p>
+<blockquote>
+<p><strong>TIME SAVING TIP</strong></p>
+<p>For building Burgers and desserts frames a faster way to work is:</p>
+<ol type="1">
+<li>duplicate the frames you made for pizza</li>
+<li>name the frames using the naming convention</li>
+<li>on one of the new frames you create, select the pizza component and right click. From the context menu, choose <em>Swap instance</em> and choose burgers or dessert</li>
+</ol>
+</blockquote>
+<h2 id="building-the-prototype">Building the prototype</h2>
+<p>Before you begin, think about how the prototype frames will be linked. Think about what should happen for every interaction a person will have with the site. For example, if I’m on the home page, and I open the menu, but don’t want to select any of the food options, how do I close the menu again? Remember, every interaction should have a way to return to the previous state.</p>
+<p>Switch to prototype mode (it’s a tab at the top of the properties panel beside <em>Design</em>)</p>
+<p>For each connection in the prototype, choose the following settings</p>
+<ol type="1">
+<li>on tap</li>
+<li>navigate to</li>
+<li><em>select the page you want to navigate to</em></li>
+<li>smart animate</li>
+<li>ease out</li>
+</ol>
+<p>You will need a connection for each of the following:</p>
+<h3 id="home-nav-closed">Home/ nav closed</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>link</strong></th>
+<th><strong>destination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>hamburger menu icon</td>
+<td>home/nav open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="homenav-open">Home/nav open</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>link</strong></th>
+<th><strong>destination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>Home/nav-closed</td>
+</tr>
+<tr class="even">
+<td>menu close icon</td>
+<td>home/nav-closed</td>
+</tr>
+<tr class="odd">
+<td>pizza</td>
+<td>pizza/nav closed</td>
+</tr>
+<tr class="even">
+<td>burgers</td>
+<td>burgers/nav closed</td>
+</tr>
+<tr class="odd">
+<td>dessert</td>
+<td>dessert/nav closed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pizzanav-closed">Pizza/nav closed</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Header</strong></th>
+<th><strong>Header</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>home/nav open</td>
+</tr>
+<tr class="even">
+<td>hamburger menu icon</td>
+<td>pizza/nav open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pizzanav-open">Pizza/nav open</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>link</strong></th>
+<th><strong>destination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>Home/nav-closed</td>
+</tr>
+<tr class="even">
+<td>menu close icon</td>
+<td>pizza/nav-closed</td>
+</tr>
+<tr class="odd">
+<td>pizza</td>
+<td>pizza/nav closed</td>
+</tr>
+<tr class="even">
+<td>burgers</td>
+<td>burgers/nav closed</td>
+</tr>
+<tr class="odd">
+<td>dessert</td>
+<td>dessert/nav closed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="burgersnav-closed">Burgers/nav closed</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Header</strong></th>
+<th><strong>Header</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>home/nav open</td>
+</tr>
+<tr class="even">
+<td>hamburger menu icon</td>
+<td>burgers/nav open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="burgersnav-open">Burgers/nav open</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>link</strong></th>
+<th><strong>destination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>Home/nav-closed</td>
+</tr>
+<tr class="even">
+<td>menu close icon</td>
+<td>burgers/nav-closed</td>
+</tr>
+<tr class="odd">
+<td>pizza</td>
+<td>pizza/nav closed</td>
+</tr>
+<tr class="even">
+<td>burgers</td>
+<td>burgers/nav closed</td>
+</tr>
+<tr class="odd">
+<td>dessert</td>
+<td>dessert/nav closed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dessertnav-closed">Dessert/nav closed</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Header</strong></th>
+<th><strong>Header</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>home/nav open</td>
+</tr>
+<tr class="even">
+<td>hamburger menu icon</td>
+<td>dessert/nav open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dessertnav-open">Dessert/nav open</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>link</strong></th>
+<th><strong>destination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>logo</td>
+<td>Home/nav-closed</td>
+</tr>
+<tr class="even">
+<td>menu close icon</td>
+<td>dessert/nav-closed</td>
+</tr>
+<tr class="odd">
+<td>pizza</td>
+<td>pizza/nav closed</td>
+</tr>
+<tr class="even">
+<td>burgers</td>
+<td>burgers/nav closed</td>
+</tr>
+<tr class="odd">
+<td>dessert</td>
+<td>dessert/nav closed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="testing">Testing</h3>
+<p>Use the play button at the top right of the screen to review your prototype. Test each interaction listed in the tables above. You are testing interactions and design.</p>
+<h4 id="interaction-testing">Interaction testing</h4>
+<p>Make sure all interactions behave the way you expect. Check that the animations are all the same type. Every action should have a way to return to the original state. Make sure there is a way to get back to the home page.</p>
+<h4 id="design-testing">Design testing</h4>
+<p>When you are testing, you may see some text or images <em>Jumping around</em>. This is caused by something not being properly aligned. Go back to the design view and fix the positioning of elements that are not correctly aligned.</p>
+<h2 id="sharing-the-prototype">Sharing the prototype</h2>
+<p>Typically, you will want to share your prototypes with clients. To do this:</p>
+<h3 id="sharing-for-review">Sharing for review</h3>
+<ol type="1">
+<li>select the <em>Share</em> button at the top of the screen</li>
+<li>select <em>anyone with the link</em> and <em>can view prototypes</em></li>
+<li>select <em>Copy link</em></li>
+<li>send reviewers the link</li>
+</ol>
+<h3 id="sharing-for-collaboration">Sharing for collaboration</h3>
+<ol type="1">
+<li>select the <em>Share</em> button at the top of the screen</li>
+<li>enter an email address of the person you want to collaborate with</li>
+<li>beside the email address, select <em>Can edit</em></li>
+<li>Select <em>Invite</em></li>
+<li>The person(s) will receive an email with instructions</li>
+<li>A Figma account is required for collaboration</li>
+</ol></body></html>

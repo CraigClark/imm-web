@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65"
+  aria-labelledby="icon-social-pixabay-title icon-social-pixabay-desc" role="img">
+  <title id="icon-social-pixabay-title">Pixabay</title>
+  <desc id="icon-social-pixabay-desc">Get images on Pixabay</desc>
+  <path class="icon-social-pixabay"
+    d="M5.42,0H59.58A5.42,5.42,0,0,1,65,5.42V59.58A5.42,5.42,0,0,1,59.58,65H5.42A5.42,5.42,0,0,1,0,59.58V5.42A5.42,5.42,0,0,1,5.42,0Zm38.8,33.7,6.24,8h6.88L47.15,29.15l9.33-12H50l-5.72,7.49-5.14-7.49H32.64l8.58,12L31.89,41.7h6.72ZM19.48,17.18a12.05,12.05,0,0,0-8.58,3.58,12.23,12.23,0,0,0-3.54,8.65v22.1h4.81V41.69h7.31a12.06,12.06,0,0,0,8.6-3.61,12.26,12.26,0,0,0,0-17.32,12.12,12.12,0,0,0-8.6-3.58ZM12.17,36.83V29.41a7.42,7.42,0,0,1,2.14-5.22,7.35,7.35,0,0,1,10.39,0,7.4,7.4,0,0,1-5.22,12.64Z" />
+</svg>

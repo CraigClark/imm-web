@@ -1,0 +1,52 @@
+# Backup files
+*.bak
+*.bak.*
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+#but don't ignore#
+!assets/*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+error_log
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Things we don't need in production #
+######################################
+
+*.css.map
+*.code-workspace
+
+
+# Specific Directories #
+########################
+
+notesLocal/*
+test/*
+
+# Local development #
+#####################
+
+.nova/
