@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMM UX Design : Critique Exercise</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        background-color: rgb(198, 3, 153);
+        background-image: url(./dust.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: calc(1rem + 2vw);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: url(./arrow.svg), auto;
+        min-height: 100vh;
+        color: #fff;
+      }
+
+      h1 {
+        font-family: "Nerko One", cursive;
+        font-size: calc(2rem + 0.5vw);
+        text-shadow: 1px 1px 0px rgba(3, 9, 24, 0.52);
+        color: white;
+        text-align: center;
+      }
+
+      summary {
+        font-weight: bold;
+        font-size: 1.87em;
+      }
+
+      summary:hover {
+        cursor: url(./finger.svg), auto;
+      }
+
+      #elements div a {
+        display: block;
+        font-size: calc(2em + 0.5vw);
+        color: #0f1f4f;
+        font-family: "Just Me Again Down Here", cursive;
+        text-decoration: none;
+      }
+      .wrapper {
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+
+      .element-wrapper {
+        display: flex;
+        background: white;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 2px rgba(3, 9, 24, 0.25);
+      }
+
+      .button {
+        margin: 1.5rem auto;
+        text-align: center;
+      }
+
+      button {
+        width: 50%;
+        max-width: 800px;
+        padding: 0.75rem;
+        color: #0f1f4f;
+        font-weight: 600;
+        font-size: calc(0.5rem + 0.5vw);
+        background: #caff8a;
+        text-shadow: 1px 1px 0px rgba(3, 9, 24, 0.52);
+        box-shadow: 2px 2px 2px rgba(3, 9, 24, 0.25);
+        border-radius: 0.5rem;
+        border: 0;
+        transition: all 0.6s ease-in-out;
+      }
+
+      button:hover {
+        background: #0f1f4f;
+        color: #fff;
+        cursor: url(./finger.svg), auto;
+      }
+
+      a:hover {
+        cursor: url(./finger.svg), auto;
+      }
+
+      li {
+        margin-bottom: 1em;
+      }
+      .wiggle:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>
+        IMM UX Design <br />
+        Critique Exercise
+      </h1>
+      <details>
+        <summary class="wiggle">Instructions</summary>
+
+        <ol type="1">
+          <li>
+            Click the <em>randomize</em> button below to load a term we have
+            learned in class.
+          </li>
+          <li>
+            This will load a word into the white box that links to a page on
+            Behance
+          </li>
+          <li>
+            With your partner, choose two items form the search results and
+            critique them
+          </li>
+          <li>
+            Think about what we have learned in class:
+            <ul>
+              <li>
+                Design Theory (Gestalt, CRAP, colour theory and readability)
+              </li>
+              <li>
+                Psychology (social validation, reciprocity, scarcity and
+                simplified choices)
+              </li>
+              <li>Accessibility</li>
+            </ul>
+          </li>
+          <li>Describe what works with the design.</li>
+          <li>
+            If you were on the design team, what would you recommend to improve
+            the design? Why?
+          </li>
+        </ol>
+      </details>
+
+      <p>Be prepared to discuss your findings with the class</p>
+
+      <div class="element-wrapper">
+        <div id="elements">
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=user%20interface"
+              >user interface</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=gestalt%20design"
+              >gestalt design</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=accessibility"
+              >accessibility</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=typography"
+              >typography</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=logo%20design"
+              >logo design</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=responsive%20design"
+              >responsive design</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=photography"
+              >photography</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=illustration"
+              >illustration</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=data%20visualization"
+              >data visualization</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=web%20design"
+              >web design</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=readability"
+              >readability</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=psychology"
+              >psychology</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=ux%20research"
+              >UX research</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=wireframe"
+              >wireframe</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=prototype"
+              >prototype</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=navigation"
+              >navigation</a
+            >
+          </div>
+          <div><a href="https://www.behance.net/?search=html">html</a></div>
+          <div><a href="https://www.behance.net/?search=css">css</a></div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=gamification"
+              >gamification</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=branding%20package"
+              >branding package</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=dashboard"
+              >dashboard</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=design%20system"
+              >design system</a
+            >
+          </div>
+          <div class="wiggle">
+            <a class="wiggle" href="https://www.behance.net/?search=persona"
+              >persona</a
+            >
+          </div>
+          <div class="wiggle">
+            <a
+              class="wiggle"
+              href="https://www.behance.net/?search=user%20testing"
+              >user testing</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="button wiggle">
+        <button id="randomize">Randomize</button>
+      </div>
+    </div>
+
+    <script>
+      var w = document.getElementById("elements");
+      var button = document.getElementById("randomize");
+      var quotes = w.children; // inner elements, your quotes divs
+
+      // a function to hide all divs
+      var hideDivs = function (divs) {
+        for (var div of divs) {
+          div.style.display = "none";
+        }
+      };
+
+      hideDivs(quotes); // hide all initially
+
+      // on click
+      button.addEventListener("click", function (event) {
+        var rnd = Math.floor(Math.random() * quotes.length); // get random index
+        hideDivs(quotes); // hide all quotes
+        quotes[rnd].style.display = "block"; // show random quote
+        event.target.textContent = "Load another UX word!"; // set button text. event.target is the button you've clicked
+      });
+    </script>
+  </body>
+</html>
