@@ -3,20 +3,35 @@
   --button-default-txt: #c4c2d5;
   --button-hover-txt: #f3f3f7;
   --button-hover-bg: #10132c;
+  /* set to #FCF6C2 on toggle */
+  --title-color-space: #ceb8a0;
+  --container-padding: 0 10vw;
+  /* set container-bg to 0.47% transparency on active*/
+  --container-bg: rgba(21, 10, 18, 0);
   font-family: "IBM Plex Sans";
   font-size: 18px;
 }
 
 body {
-  background-image: url(./assets/galaxy-3608029_1920.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding: 0;
+  margin: 0;
+}
+
+body.space {
+  background-color: #150a12;
+  background-image: url(./assets/galaxy-3608029_1920.png);
+}
+
+.container {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
   margin: 0;
-  padding: 0 10vw;
+  padding: 0;
+  background-color: var(--container-bg);
 }
 
 .content-wrapper {
@@ -29,6 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--container-padding);
 }
 
 main > * {
@@ -37,8 +53,11 @@ main > * {
 }
 
 main h1 {
-  color: #ceb8a0;
   font-size: 20vw;
+}
+
+body.space main h1 {
+  color: var(--title-color-space);
 }
 
 main p {
@@ -50,6 +69,7 @@ main p {
 footer {
   padding: 10px;
   text-align: center;
+  padding: var(--container-padding);
 }
 
 button {
@@ -65,8 +85,8 @@ button {
   font-size: 1rem;
 }
 
-button:not(:first-child):not(:last-child) {
-  margin: 0 1em;
+button:not(:last-child) {
+  margin: 0 1em 0 0;
 }
 
 /* Hover effects */
@@ -89,7 +109,7 @@ button:focus {
   outline-offset: 4px;
 }
 
-@media (max-width: 33.33em) {
+@media (max-width: 45em) {
   footer {
     margin: 0px calc(50% - 50vw);
     background-color: var(--button-default-bg);
