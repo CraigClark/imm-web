@@ -3,11 +3,13 @@
   --button-default-txt: #c4c2d5;
   --button-hover-txt: #f3f3f7;
   --button-hover-bg: #10132c;
-  /* set to #FCF6C2 on toggle */
+  /* set to #FCF6C2 with JS */
   --title-color-space: #ceb8a0;
   --container-padding: 0 10vw;
-  /* set container-bg to 0.47% transparency on active*/
-  --container-bg: rgba(21, 10, 18, 0);
+  /* set to rgba(21, 10, 18, 0) with JS */
+  --container-bg-space: rgba(21, 10, 18, 0);
+  /* set to  6px 6px 13px rgba(0, 0, 0, 0.89) with toggle */
+  --text-shadow-space: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   font-family: "IBM Plex Sans";
   font-size: 18px;
 }
@@ -31,7 +33,10 @@ body.space {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--container-bg);
+}
+
+body.space .container {
+  background-color: var(--container-bg-space);
 }
 
 .content-wrapper {
@@ -58,6 +63,11 @@ main h1 {
 
 body.space main h1 {
   color: var(--title-color-space);
+}
+
+body.space main h1,
+body.space main p {
+  text-shadow: var(--text-shadow-space);
 }
 
 main p {
