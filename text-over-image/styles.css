@@ -5,11 +5,13 @@
   --button-hover-bg: #10132c;
   /* set to #FCF6C2 with JS */
   --title-color-space: #ceb8a0;
+  --title-color-winter: #fff;
   --container-padding: 0 10vw;
   /* set to rgba(21, 10, 18, 0) with JS */
   --container-bg-space: rgba(21, 10, 18, 0);
   /* set to  6px 6px 13px rgba(0, 0, 0, 0.89) with JS */
   --text-shadow-space: 0 0 0 0 rgba(0, 0, 0, 0);
+  --position-winter: bottom;
   font-family: "IBM Plex Sans";
   font-size: 18px;
 }
@@ -27,6 +29,12 @@ body.space {
   /* set background if I'm on the space page */
   background-color: #150a12;
   background-image: url(./assets/galaxy-3608029_1920.png);
+}
+
+body.winter {
+  /* set background if I'm on the space page */
+  background-color: #d1daf6;
+  background-image: url(./assets/snow-3193865_1920.png);
 }
 
 .container {
@@ -50,6 +58,9 @@ body.space .container {
   justify-content: flex-start;
 }
 
+body.winter .content-wrapper {
+  align-items: var(--position-winter);
+}
 main {
   /* set positioning of main */
   display: flex;
@@ -64,12 +75,14 @@ main > * {
   line-height: 1.15;
 }
 
-main h1 {
+body.space main h1 {
+  color: var(--title-color-space);
   font-size: clamp(1.5rem, 20vw, 20vw);
 }
 
-body.space main h1 {
-  color: var(--title-color-space);
+body.winter main h1 {
+  color: var(--title-color-winter);
+  font-size: clamp(1.5rem, 15vw, 15vw);
 }
 
 body.space main h1,
@@ -79,8 +92,17 @@ body.space main p {
 
 main p {
   color: #fff;
-  padding-left: 0.04vw;
+}
+
+body.space main p {
+  padding-left: 2vw;
   font-size: clamp(1rem, 8.35vw, 8.35vw);
+}
+
+body.winter main p {
+  padding-left: 2.5vw;
+  font-size: clamp(1rem, 6.25vw, 6.25vw);
+  margin-top: -0.5em;
 }
 
 footer {
