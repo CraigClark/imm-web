@@ -30,7 +30,7 @@ body.space {
 }
 
 .container {
-  /* push footer to bottom of the page regardless of screen size*/
+  /* push footer to bottom of the page regardless of screen size */
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
@@ -65,9 +65,6 @@ main > * {
 }
 
 main h1 {
-  font-size: 20vw;
-  /* using vw for font size risks fonts to small to read on very narrow screens,
-  sets min font-size*/
   font-size: clamp(1.5rem, 20vw, 20vw);
 }
 
@@ -83,9 +80,6 @@ body.space main p {
 main p {
   color: #fff;
   padding-left: 0.04vw;
-  font-size: 8.35vw;
-  /* using vw for font size risks fonts to small to read on very narrow screens,
-  sets min font-size*/
   font-size: clamp(1rem, 8.35vw, 8.35vw);
 }
 
@@ -96,7 +90,6 @@ footer {
   padding: var(--container-padding);
 }
 
-/* Active button effect */
 button {
   background-color: var(--button-default-bg);
   color: var(--button-default-txt);
