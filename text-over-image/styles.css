@@ -8,13 +8,14 @@
   --container-padding: 0 10vw;
   /* set to rgba(21, 10, 18, 0) with JS */
   --container-bg-space: rgba(21, 10, 18, 0);
-  /* set to  6px 6px 13px rgba(0, 0, 0, 0.89) with toggle */
-  --text-shadow-space: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  /* set to  6px 6px 13px rgba(0, 0, 0, 0.89) with JS */
+  --text-shadow-space: 0 0 0 0 rgba(0, 0, 0, 0);
   font-family: "IBM Plex Sans";
   font-size: 18px;
 }
 
 body {
+  /* set background image behaviour regardless of the bg image used */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -23,11 +24,13 @@ body {
 }
 
 body.space {
+  /* set background if I'm on the space page */
   background-color: #150a12;
   background-image: url(./assets/galaxy-3608029_1920.png);
 }
 
 .container {
+  /* push footer to bottom of the page regardless of screen size*/
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
@@ -36,16 +39,19 @@ body.space {
 }
 
 body.space .container {
+  /* overlay for bg image, initial value is 0 and changes with JS */
   background-color: var(--container-bg-space);
 }
 
 .content-wrapper {
+  /* align text vertically */
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 main {
+  /* set positioning of main */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,12 +59,16 @@ main {
 }
 
 main > * {
+  /* control height of typography for immediate children of main */
   margin: 0;
   line-height: 1.15;
 }
 
 main h1 {
   font-size: 20vw;
+  /* using vw for font size risks fonts to small to read on very narrow screens,
+  sets min font-size*/
+  font-size: clamp(1.5rem, 20vw, 20vw);
 }
 
 body.space main h1 {
@@ -72,29 +82,36 @@ body.space main p {
 
 main p {
   color: #fff;
-  padding-left: 1/25vw;
+  padding-left: 0.04vw;
   font-size: 8.35vw;
+  /* using vw for font size risks fonts to small to read on very narrow screens,
+  sets min font-size*/
+  font-size: clamp(1rem, 8.35vw, 8.35vw);
 }
 
 footer {
-  padding: 10px;
+  padding: 0.556rem;
+  margin: 1rem 0;
   text-align: center;
   padding: var(--container-padding);
 }
 
+/* Active button effect */
 button {
   background-color: var(--button-default-bg);
   color: var(--button-default-txt);
-  border: 2px solid var(--button-default-bg);
-  border-radius: 8px;
-  padding: 12px 24px;
+  border: 0.111rem solid var(--button-default-bg);
+  border-radius: 0.444rem;
+  padding: 0.667rem 1.333rem;
   cursor: pointer;
+  /* smooth the animation when buttons change colour */
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   outline: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.222rem 0.556rem rgba(0, 0, 0, 0.2);
   font-size: 1rem;
 }
 
+/* spacing between buttons, no margin on last button */
 button:not(:last-child) {
   margin: 0 1em 0 0;
 }
@@ -103,25 +120,26 @@ button:not(:last-child) {
 button:hover {
   background-color: var(--button-hover-bg);
   color: var(--button-hover-txt);
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.167rem);
+  box-shadow: 0 0.444rem 0.833rem rgba(0, 0, 0, 0.25);
 }
 
 /* Active button effect */
 button:active {
-  transform: translateY(1px); /* Slight press effect */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0.056rem);
+  box-shadow: 0 0.222rem 0.444rem rgba(0, 0, 0, 0.2);
 }
 
 /* Focus styles for accessibility */
 button:focus {
-  outline: 3px solid var(--button-hover-txt);
-  outline-offset: 4px;
+  outline: 0.167rem solid var(--button-hover-txt);
+  outline-offset: 0.222rem;
 }
 
 @media (max-width: 45em) {
   footer {
-    margin: 0px calc(50% - 50vw);
+    margin: 0 calc(50% - 50vw);
+    padding: 1rem 0;
     background-color: var(--button-default-bg);
   }
 
