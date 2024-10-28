@@ -52,7 +52,6 @@ body.space {
 body.winter {
   /* set background if I'm on the space page */
   background-color: #d1daf6;
-  background-position: left bottom;
   background-image: url(./assets/snow-3193865_1920.png);
 }
 
@@ -80,6 +79,7 @@ body.winter .container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  min-height: 75vh;
 }
 
 body.winter .content-wrapper {
@@ -131,6 +131,7 @@ body.space main p {
 }
 
 body.winter main p {
+  color: var(--title-color-winter);
   padding-left: 2.15vw;
   font-size: clamp(1rem, 5.28vw, 5.28vw);
   margin-top: -0.5em;
@@ -138,12 +139,12 @@ body.winter main p {
 
 footer {
   padding: 0.556rem;
-  margin: 1rem 0;
   text-align: center;
   padding: var(--container-padding);
 }
 
 button {
+  margin: 1rem 0;
   background-color: var(--button-default-bg);
   color: var(--button-default-txt);
   border: 0.111rem solid var(--button-default-bg);

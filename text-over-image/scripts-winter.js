@@ -43,6 +43,48 @@ document.getElementById("shadow").addEventListener("click", function () {
   );
 });
 
+document.getElementById("alternate").addEventListener("click", function () {
+  // Retrieve current values of each variable
+  const currentBg = getComputedStyle(document.documentElement)
+    .getPropertyValue("--container-bg-winter")
+    .trim();
+  const currentShadow = getComputedStyle(document.documentElement)
+    .getPropertyValue("--text-shadow-winter")
+    .trim();
+  const currentTitleColor = getComputedStyle(document.documentElement)
+    .getPropertyValue("--title-color-winter")
+    .trim();
+  const currentPosition = getComputedStyle(document.documentElement)
+    .getPropertyValue("--position-winter")
+    .trim();
+
+  // Toggle each variable between its two states
+  document.documentElement.style.setProperty(
+    "--container-bg-winter",
+    currentBg ===
+      "linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.44) 56%, rgba(255, 255, 255, 0.06) 94%, rgba(255, 255, 266, 0) 100%)"
+      ? "linear-gradient(to top, rgba(31,46,67,1) 0%, rgba(32,47,68,1) 1%, rgba(69,103,150,0.44) 56%, rgba(91,123,168,0.06) 94%, rgba(91,123,168,0) 100%)"
+      : "linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.44) 56%, rgba(255, 255, 255, 0.06) 94%, rgba(255, 255, 266, 0) 100%)"
+  );
+
+  document.documentElement.style.setProperty(
+    "--text-shadow-winter",
+    currentShadow === "-0.2vw -0.2vw 0 rgba(255, 255, 255, 0.86)"
+      ? "0.2vw 0.2vw 0 rgba(0, 0, 0, 0.86)"
+      : "-0.12vw -0.12vw 0 rgba(255, 255, 255, 0.86)"
+  );
+
+  document.documentElement.style.setProperty(
+    "--title-color-winter",
+    currentTitleColor === "#1B449F" ? "#fff" : "#1B449F"
+  );
+
+  document.documentElement.style.setProperty(
+    "--position-winter",
+    currentPosition === "end" ? "center" : "end"
+  );
+});
+
 // Reset all CSS variables modified by JavaScript back to their default values
 document.getElementById("original").addEventListener("click", function () {
   // Remove all inline styles on the root element (where JS applied styles)
