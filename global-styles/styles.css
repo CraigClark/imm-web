@@ -1,0 +1,68 @@
+/* Root variables and global styles */
+:root {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  background-color: rgb(253, 243, 222);
+}
+
+/* Layout for main sections */
+header,
+main,
+footer {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+/* Heading styles */
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.75em, 5vw, 4.25em);
+}
+
+/* Navigation styles */
+main nav ul {
+  list-style: none; /* Override browser styles */
+  padding: 0;
+  display: grid; /* Layout for links */
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+main nav ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+/* Link styles within nav */
+main nav ul li a {
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 2.25em);
+  font-weight: 500;
+  color: rgb(117, 63, 4);
+  display: block;
+  width: 100%;
+  background-color: rgba(252, 221, 165, 1);
+  padding: 1em;
+  border-radius: 0.5em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.33);
+  transition: background-color 0.5s ease;
+}
+
+/* Link hover effect */
+main nav ul li a:hover {
+  background-color: rgba(252, 221, 165, 0.5);
+}
+
+/* Link states (active and visited) */
+main nav ul li a,
+main nav ul li a:active,
+main nav ul li a:visited {
+  color: rgb(117, 63, 4);
+}
+
+/* Media Queries */
+@media (min-width: 45em) {
+  /* Add responsive styles here */
+}
