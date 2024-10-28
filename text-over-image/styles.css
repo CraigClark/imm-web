@@ -9,12 +9,30 @@
   --container-padding: 0 10vw;
   /* set to rgba(21, 10, 18, 0) with JS */
   --container-bg-space: rgba(21, 10, 18, 0);
+  /* toggle bg with JS */
+  --container-bg-winter: linear-gradient(
+    to top,
+    rgba(31, 46, 67, 0) 0%,
+    rgba(32, 47, 68, 0) 1%,
+    rgba(69, 103, 150, 0) 56%,
+    rgba(91, 123, 168, 0) 94%,
+    rgba(91, 123, 168, 0) 100%
+  );
   /* set to  6px 6px 13px rgba(0, 0, 0, 0.89) with JS */
   --text-shadow-space: 0 0 0 0 rgba(0, 0, 0, 0);
-  --position-winter: bottom;
+  /* set to  0.2vw 0.2vw 0 rgba(0, 0, 0, 0.86) with JS */
+  --text-shadow-winter: 0.2vw 0.2vw 0 rgba(0, 0, 0, 0);
+  /* set to end with JS */
+  --position-winter: center;
   font-family: "IBM Plex Sans";
   font-size: 18px;
 }
+
+/* white gredient for winter
+
+linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.44) 56%, rgba(255, 255, 255, 0.06) 94%, rgba(255, 255, 266, 0) 100%)
+
+*/
 
 body {
   /* set background image behaviour regardless of the bg image used */
@@ -34,6 +52,7 @@ body.space {
 body.winter {
   /* set background if I'm on the space page */
   background-color: #d1daf6;
+  background-position: left bottom;
   background-image: url(./assets/snow-3193865_1920.png);
 }
 
@@ -51,6 +70,11 @@ body.space .container {
   background-color: var(--container-bg-space);
 }
 
+body.winter .container {
+  /* overlay for bg image, initial value is 0 and changes with JS */
+  background: var(--container-bg-winter);
+}
+
 .content-wrapper {
   /* align text vertically */
   display: flex;
@@ -60,6 +84,8 @@ body.space .container {
 
 body.winter .content-wrapper {
   align-items: var(--position-winter);
+  transition: transform 0.5s ease;
+  transform: translateY(var(--position-offset, 0));
 }
 main {
   /* set positioning of main */
@@ -82,12 +108,17 @@ body.space main h1 {
 
 body.winter main h1 {
   color: var(--title-color-winter);
-  font-size: clamp(1.5rem, 15vw, 15vw);
+  font-size: clamp(1.5rem, 12.5vw, 12.5vw);
 }
 
 body.space main h1,
 body.space main p {
   text-shadow: var(--text-shadow-space);
+}
+
+body.winter main h1,
+body.winter main p {
+  text-shadow: var(--text-shadow-winter);
 }
 
 main p {
@@ -100,8 +131,8 @@ body.space main p {
 }
 
 body.winter main p {
-  padding-left: 2.5vw;
-  font-size: clamp(1rem, 6.25vw, 6.25vw);
+  padding-left: 2.15vw;
+  font-size: clamp(1rem, 5.28vw, 5.28vw);
   margin-top: -0.5em;
 }
 
@@ -153,7 +184,7 @@ button:focus {
 
 @media (max-width: 45em) {
   footer {
-    margin: 0 calc(50% - 50vw);
+    margin: 2em calc(50% - 50vw) 0;
     padding: 1rem 0;
     background-color: var(--button-default-bg);
   }

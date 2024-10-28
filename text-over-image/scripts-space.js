@@ -21,6 +21,7 @@ document.getElementById("background").addEventListener("click", function () {
   }
 });
 
+// Space styles
 // Toggle title colour between two options
 document.getElementById("color").addEventListener("click", function () {
   // Get the current value of --title-color-space
