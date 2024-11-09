@@ -1,84 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>HTML Elements</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/styles.css">
-  <title>HTML Elements</title>
-</head>
+  <body>
+    <header id="header">
+      <h1><abbr title="Hypertext Markup Language">HTML</abbr> Style Starter</h1>
+      <p>
+        This document contains most HTML elements. The intent is to provide
+        sample content to develop base
+        <abbr title="Cascading Style Sheets">CSS</abbr>.
+      </p>
+      <p>
+        In keeping with the goal of clean HTML styling, no classes have been
+        added to this document. There are some <code>id</code> attributes where
+        necessary.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#text-content">Text Content</a></li>
+          <li><a href="#inline-elements">Inline Elements</a></li>
+          <li><a href="#multi-media">Multimedia</a></li>
+          <li><a href="#interactive-elements">Interactive Elements</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#form-elements">Form Elements</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <article>
+        <section id="text-content">
+          <h1>Text Content</h1>
+          <p>
+            Description: The <em>&#x3C;h1&#x3E;</em> element is used for the main title or
+            top heading of a page or section, setting it apart as the most
+            important. Search engines and accessibility tools often use
+            <em>&#x3C;h1&#x3E;</em>to understand the main topic of the page.
+          </p>
 
-<body>
+          <h2>Heading Two</h2>
+          <p>
+            Explanation: The <em>&#x3C;h2&#x3E;</em> tag represents a second-level
+            heading, commonly used to define subtopics within a section. It’s
+            useful for structuring content hierarchically.
+          </p>
 
-  <header id="header">
-    <h1><abbr title="Hypertext Markup Language">HTML</abbr> Style Starter</h1>
-    <p>This document contains most HTML elements. The intent is to provide sample content to develop base <abbr
-        title="Cascading Style Sheets">CSS</abbr>.</p>
-    <p>In keeping with the goal of clean HTML styling, no classes have been added to this document. There are some 
-      <code>id</code> attributes where necessary.</p>
-    <nav>
-      <ul>
-        <li><a href="#text-content">Text Content</a></li>
-        <li><a href="#inline-elements">Inline Elements</a></li>
-        <li><a href="#multi-media">Multimedia</a></li>
-        <li><a href="#interactive-elements">Interactive Elements</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#form-elements">Form Elements</a></li>
-      </ul>
-    </nav>
-  </header>
-  <hr />
-  <main>
-    <article>
-      <section id="text-content">
-        <h1>Text Content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odit corrupti soluta quaerat, architecto,
-          blanditiis nisi esse incidunt nam harum ullam sit fuga cupiditate! Animi iste officiis itaque veritatis?</p>
+          <h3>Heading Three</h3>
+          <p>
+            The <em>&#x3C;h3&#x3E;</em> element is a third-level heading, commonly used
+            under <em>&#x3C;h2&#x3E;</em>headings to further structure content. It aids
+            in creating a well-defined hierarchy.
+          </p>
 
-        <h2>Heading Two</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ea aperiam necessitatibus sequi, enim ex
-          mollitia dolorem fugiat cumque dolorum sint pariatur, facere voluptatem id minima animi nisi eveniet? Quaerat.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat atque nulla placeat mollitia fugit illum qui
-          quae minima quisquam fuga, laboriosam harum itaque voluptatum unde odio quia, explicabo quam sit!</p>
+          <h4>Heading Four</h4>
+          <p>
+            The <em>&#x3C;h4&#x3E;</em> element is a fourth-level heading, used for
+            subdivisions under <em>&#x3C;h3&#x3E;</em> headings for deeper organizational
+            structure.
+          </p>
+          <aside>
+            <p>
+              The <em>&#x3C;aside&#x3E;</em> element contains side content that may be
+              indirectly related to the main content, like notes or additional
+              context. It’s useful for content that doesn’t need to disrupt the
+              main flow.
+            </p>
+          </aside>
+          <p>
+            This is a typical paragraph element. Paragraphs, <em>&#x3C;p&#x3E;</em>,
+            contain blocks of text and provide logical breaks between sections
+            or topics within your content.
+          </p>
 
-        <h3>Heading Three</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores incidunt neque eveniet, eos nesciunt esse
-          inventore repellendus necessitatibus fugit voluptates molestiae architecto aperiam totam aut, quos facere
-          quibusdam laborum consequuntur.</p>
+          <h5>Heading Five</h5>
+          <p>
+            The <em>&#x3C;h5&#x3E;</em> element represents a fifth-level heading, used
+            for very specific sub-sections under <em>&#x3C;h4&#x3E;</em> headings in
+            detailed hierarchies.
+          </p>
 
-        <h4>Heading Four</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sed minima ad magnam maiores ipsam
-          facilis rerum, excepturi dolore necessitatibus rem voluptatibus pariatur officia architecto aut quam. Numquam,
-          minus culpa?</p>
-        <aside>
-          <p>This is an aside in an article. Provident saepe atque sint earum molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis laudantium, eveniet dicta et in veniam
-            ex, provident saepe atque sint?</p>
-        </aside>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero fuga iste accusamus ipsum eaque
-          odio, ab dolorum nobis officia voluptatibus nisi nulla voluptatum est nesciunt consequuntur numquam distinctio
-          earum!</p>
+          <h6>Heading Six</h6>
+          <p>
+            The <em>&#x3C;h6&#x3E;</em> element is the sixth-level heading, useful for
+            the finest level of headings when very specific sub-sections are
+            needed.
+          </p>
 
-        <h5>Heading Five</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa rerum sint et obcaecati, at perferendis vitae
-          consequuntur quidem quod perspiciatis praesentium! Esse explicabo recusandae voluptatum totam itaque nisi
-          fugiat ea.</p>
+          <h2>Descriptive List</h2>
+         <p>A descriptive list (created with the <em>&#x3C;dl&#x3E;</em>, <em>&#x3C;dt&#x3E;</em>, and <em>&#x3C;dd&#x3E;</em> tags) is used to define terms and their descriptions in a structured way. It&#8217;s helpful for glossaries, FAQs, or any list where you want to pair a term with its description.</p>
+          <dl>
+            <dt>Tardis</dt>
+            <dd>
+              A phone booth, bigger on the inside, that travels anywhere and any
+              time.
+            </dd>
+            <dt>Tree</dt>
+            <dd>A large plant.</dd>
+          </dl>
 
-        <h6>Heading Six</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere, dolor sint neque facilis
-          consequuntur culpa beatae nobis ipsam! At magnam, magni porro veniam doloremque fugit perspiciatis provident
-          neque quibusdam!</p>
-
-        <h2>Descriptive List</h2>
-        <dl>
-          <dt>Tardis</dt>
-          <dd>A phone booth, bigger on the inside, that travels anywhere and any time.</dd>
-          <dt>Tree</dt>
-          <dd>A large plant.</dd>
-        </dl>
-
-        <h2>Preformatted Code</h2>
-        <pre>
+          <h2>Preformatted Code</h2>
+          <pre>
           <code>
 &lt;ul&gt;
  &lt;li&gt;One&lt;/li&gt;
@@ -88,443 +114,630 @@
           </code>
         </pre>
 
-        <h2>Blockquote</h2>
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat inventore magni voluptates omnis
-            nisi quisquam culpa, velit optio autem doloremque quam unde exercitationem dolorum perspiciatis non at nam!
-            Deleniti.</p>
-          <footer><cite>This is the citation for the quote above.</cite></footer>
-        </blockquote>
+          <h2>Blockquote</h2>
+          <blockquote>
+            <p>
+              <p>The <em>&#x3C;blockquote&#x3E;</em> element is used for large quotations from other sources, often displayed with indentation. The <em>&#x3C;cite&#x3E;</em> tag adds a citation for the quote.</p>
+            </p>
+            <footer>
+              <cite>This is the citation for the quote above.</cite>
+            </footer>
+          </blockquote>
 
-        <h2>Ordered List</h2>
-        <ol>
-          <li>Item 01</li>
-          <li>Item 02</li>
-          <li>Item 03</li>
-          <li>Item 04</li>
-        </ol>
+          <h2>Ordered List</h2>
+          <ol>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+          </ol>
 
-        <h2>Unordered List</h2>
+          <h2>Unordered List</h2>
+          <ul>
+            <li>A thing</li>
+            <li>Another thing</li>
+            <li>There's a thing here too</li>
+            <li>The last thing</li>
+          </ul>
+
+          <h2>Mixed List</h2>
+          <ol>
+            <li>
+              An unordered list
+              <ul>
+                <li>A thing</li>
+                <li>Another thing</li>
+                <li>There's a thing here too</li>
+                <li>The last thing</li>
+              </ul>
+            </li>
+            <li>Item 02</li>
+            <li>
+              Another unordered list
+              <ul>
+                <li>A thing</li>
+                <li>
+                  An ordered list
+                  <ol>
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03</li>
+                    <li>Item 04</li>
+                  </ol>
+                </li>
+                <li>There's a thing here too</li>
+                <li>The last thing</li>
+              </ul>
+            </li>
+            <li>Item 04</li>
+          </ol>
+        </section>
+
+        <section id="inline-elements">
+          <h1>Inline Elements</h1>
+
+          <h2>Links</h2>
+          <p>This is an <a href="/index.html">internal link</a>.</p>
+          <p>
+            This is an
+            <a href="https://developer.mozilla.org/en-US/">external link</a>.
+          </p>
+          <p>
+            This is an <a href="mailto:clark.craig@gmail.com">email link</a>.
+          </p>
+          <p>This is a <a href="./assets/DummyLetter.pdf">link to a PDF</a>.</p>
+          <p>
+            This is a
+            <a href="./assets/compressedFile.txt.zip">link to a .zip file</a>.
+          </p>
+
+          <h2>Abbreviation</h2>
+          <p>
+            Abbreviation: <abbr title="Hypertext Markup Language">HTML</abbr>.
+          </p>
+
+          <h2>Inline Code</h2>
+          <p>This is code: <code>cd ../styles/css</code></p>
+
+          <h2>Definition</h2>
+          <p>
+            <dfn>HTML</dfn> is the standard markup language for creating web
+            pages.
+          </p>
+
+          <h2>Strong Text</h2>
+          <p>This is <strong>strong text</strong>.</p>
+
+          <h2>Emphasis</h2>
+          <p>This text is <em>emphasized.</em></p>
+
+          <h2>Delete, Insert, Strike, and Marked (Highlighted)</h2>
+          <p>
+            You can indicate that <del>this text has been deleted</del> and
+            replaced with <ins>this text</ins>. <s>Strike</s> is different from
+            deleting; it indicates something is no longer relevant. Text can
+            also be <mark>highlighted</mark>.
+          </p>
+
+          <h2>Small Text</h2>
+          <p>
+            <small
+              >Small text is suitable for information such as disclaimers and
+              copyright notices.</small
+            >
+          </p>
+
+          <h2>Subscript and Superscript</h2>
+          <p>H<sub>2</sub>O</p>
+          <p>Here lies the 2<sup>nd</sup> fastest gun in the West.</p>
+
+          <h2>Keyboard Input</h2>
+          <p>
+            On a Mac, press <kbd>command (⌘)</kbd> + <kbd>s</kbd> to save a
+            document.
+          </p>
+
+          <h2>Inline Quote</h2>
+          <p><q>What is an inline quote?</q> Aluki asked.</p>
+
+          <h2>Sample Computer Output</h2>
+          <p><kbd>⌘</kbd> + <kbd>s</kbd> + <kbd>shift</kbd></p>
+          <p><samp>Please select a destination to save your file.</samp></p>
+
+          <h2>Time</h2>
+          <p>
+            Joe Strummer: <time datetime="1952-08-21">August 21, 1952</time> to
+            <time datetime="2002-12-22">December 22, 2002</time>
+          </p>
+
+          <h2>Variables</h2>
+          <p>
+            The area of a rectangle is <var>width</var> x <var>length</var>.
+          </p>
+        </section>
+
+        <section id="multi-media">
+          <h1>Multimedia</h1>
+
+          <h2>Image</h2>
+          <img
+            src="./assets/sampleImage.jpg"
+            alt="Modern architecture seen from below"
+          />
+
+          <h2>Figure</h2>
+          <p>The <em>&#x3C;figure&#x3E;</em> element is used to group content, such as images, illustrations, charts, or code snippets, along with a descriptive caption. It provides a semantic structure, which helps browsers and assistive technologies understand that the content inside <em>&#x3C;figure&#x3E;</em> and <em>&#x3C;figcaption&#x3E;</em> are related.</p>
+          <figure>
+            <img
+              src="./assets/sampleFigure.jpg"
+              alt="Looking up at a building covered in multi-colored panels"
+            />
+            <figcaption>
+              This is a caption for the image inside a figure element.
+            </figcaption>
+          </figure>
+
+          <h2>Picture</h2>
+          <p>The <em>&#x3C;picture&#x3E;</em> element is used to provide multiple versions of an image for different screen sizes or device capabilities. It allows for responsive images by defining various <em>&#x3C;source&#x3E;</em> elements, each with different media conditions and image files. When the conditions of a <em>&#x3C;source&#x3E;</em> are met, the browser loads the specified image from its <em>&#x3C;srcset&#x3E;</em>. If none match, it defaults to the image in the <em>&#x3C;img&#x3E;</em> tag, ensuring compatibility across devices.</p>
+          <picture>
+            <source
+              media="(min-width:480px)"
+              srcset="./assets/samplePicture960.jpg"
+            />
+            <source
+              media="(min-width:960px)"
+              srcset="./assets/samplePicture1140.jpg"
+            />
+            <source
+              media="(min-width:1440px)"
+              srcset="./assets/samplePicture1920.jpg"
+            />
+            <img src="./assets/samplePicture480.jpg" alt="Abstract" />
+          </picture>
+
+          <h2>Audio</h2>
+          <figure>
+            <audio
+              controls
+              src="./assets/sampleAudio.mp3"
+              title="Impact Moderato"
+            >
+              Your browser does not support <code><em>&#x3C;code&#x3E;</em></code>, You
+              can <a href="./assets/sampleAudio.mp3">download the file here</a>.
+            </audio>
+            <figcaption><em>Impact Moderato</em> by Kevin McLeod</figcaption>
+          </figure>
+
+          <h2>Video</h2>
+          <video controls src="./assets/sampleVideo.mp4" type="video/mp4">
+            Your browser does not support <code><em>&#x3C;video&#x3E;</em></code>.
+          </video>
+
+          <h2>Embedded Content</h2>
+
+          <h3>Iframe</h3>
+          <p>The <em>&#x3C;iframe&#x3E;</em> element embeds external content like videos or maps in a page. Attributes like <em>&#x3C;width&#x3E;</em> and <em>&#x3C;height&#x3E;</em> set its size, and <em>&#x3C;allow&#x3E;</em> enables permissions like fullscreen or autoplay.</p>
+          <iframe
+            src="https://player.vimeo.com/video/144829896"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <small
+              ><em>Experimental Moves</em> from
+              <a href="https://vimeo.com/deekay">Deekay</a>.</small
+            >
+          </p>
+
+          <h3>Object</h3>
+          <p>The <em>&#x3C;object&#x3E;</em> element embeds external content, like PDFs or multimedia, into a webpage. It uses the <em>&#x3C;data&#x3E;</em> attribute for the file URL and <em>&#x3C;type&#x3E;</em> to specify the content type. Fallback content, like a download link, can be added if the file doesn’t display.</p>
+          <object
+            data="./assets/DummyLetter.pdf"
+            type="application/pdf"
+            width="100%"
+            height="500px"
+          >
+            <a href="./assets/DummyLetter.pdf">Download the document</a>. You
+            will need
+            <a href="https://get.adobe.com/reader">Acrobat Reader</a> to view
+            this document.
+          </object>
+
+          <h3>SVG</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="200"
+            height="200"
+            viewBox="0 0 200 200"
+          >
+            <circle cx="100" cy="100" r="100" />
+          </svg>
+        </section>
+
+        <section id="interactive-elements">
+          <h1>Interactive Elements</h1>
+
+          <h2>Details</h2>
+          <p>The <em>&#x3C;details&#x3E;</em> element creates a collapsible section that users can expand to view additional information. The <em>&#x3C;summary&#x3E;</em> tag provides a visible label for the content within.</p>
+          <details>
+            <summary>Secondary colors</summary>
+            The resulting color when two primary colors are mixed.
+          </details>
+        </section>
+
+        <section id="tables">
+          <h1>Tables</h1>
+          <p>The <em>&#x3C;table&#x3E;</em> element organizes data into rows and columns, making it useful for displaying structured information.</p>
+          <div class="table">
+            <table>
+              <caption>
+                This is the table caption. What happens when we mix colors?
+              </caption>
+              <thead>
+                <tr>
+                  <td><!--empty--></td>
+                  <th scope="col">Red</th>
+                  <th scope="col">Blue</th>
+                  <th scope="col">Yellow</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Red</th>
+                  <td>Red</td>
+                  <td>Violet</td>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <th scope="row">Blue</th>
+                  <td>Violet</td>
+                  <td>Blue</td>
+                  <td>Green</td>
+                </tr>
+                <tr>
+                  <th scope="row">Yellow</th>
+                  <td>Orange</td>
+                  <td>Green</td>
+                  <td>Yellow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="form-elements">
+          <h1>Form Elements</h1>
+          <form action="get">
+            <fieldset>
+              <legend>Elements for Selecting</legend>
+
+              <h2>Data List</h2>
+              <p><small>The <em>&#x3C;datalist&#x3E;</em> element provides a dropdown list of predefined options for an <em>&#x3C;input&#x3E;</em> field. It enhances user input by offering suggestions while still allowing custom entries.</small></p>
+              <label for="colour-choice">Choose a color:</label>
+              <input
+                list="colour-choice"
+                id="colour-choice"
+                name="colour-choice"
+              />
+              <datalist id="colour-choice">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Yellow"></option>
+                <option value="Violet"></option>
+                <option value="Green"></option>
+                <option value="Orange"></option>
+              </datalist>
+
+              <h2>Select List</h2>
+              <p><small>The <em>&#x3C;select&#x3E;</em> element creates a dropdown menu, allowing users to choose from a list of options. Each option is defined by an <em>&#x3C;option&#x3E;</em> tag within the <em>&#x3C;select&#x3E;</em>.</small></p>
+              <label for="paint-select">Choose a type of paint:</label>
+              <select name="paint" id="paint-select">
+                <option value="">- Please choose a type of paint -</option>
+                <option value="oil">Oil</option>
+                <option value="acrylic">Acrylic</option>
+                <option value="water-colour">Water Colour</option>
+                <option value="tempra">Tempra</option>
+                <option value="encaustic">Encaustic</option>
+                <option value="latex">Latex</option>
+              </select>
+
+              <h2>Option Group</h2>
+              <p><small>The <em>&#x3C;optgroup&#x3E;</em> element groups related options within a <em>&#x3C;select&#x3E;</em> dropdown, providing labels for each group to improve organization and readability.</small></p>
+              <label for="choose-a-colour">Choose a color:</label>
+              <select id="choose-a-colour">
+                <optgroup label="Primary Colors">
+                  <option>Red</option>
+                  <option>Yellow</option>
+                  <option>Blue</option>
+                </optgroup>
+                <optgroup label="Secondary Colors">
+                  <option>Green</option>
+                  <option>Violet</option>
+                  <option>Orange</option>
+                </optgroup>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Input Types</legend>
+
+              <h2>Button</h2>
+              <input type="button" value="Button Example" />
+
+              <h2>Checkbox</h2>
+              <div class="checkbox">
+                <input type="checkbox" id="my-checkbox-red" name="my-red" />
+                <label for="my-checkbox-red">Red</label>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="my-checkbox-blue-checked"
+                  name="my-checkbox-blue-checked"
+                  checked
+                />
+                <label for="my-checkbox-blue-checked">Blue: Checked</label>
+              </div>
+
+              <h2>Color Picker</h2>
+              <input
+                type="color"
+                id="my-colour-picker"
+                name="my-colour-picker"
+                value="#009933"
+              />
+              <label for="my-colour-picker">Pick a color:</label>
+
+              <h2>Date</h2>
+              <label for="my-date">Select a date:</label>
+              <input type="date" id="my-date" name="my-date" />
+
+              <h2>Date-Time (Local)</h2>
+              <label for="my-datetime-local">Select a date and time:</label>
+              <input
+                type="datetime-local"
+                id="my-datetime-local"
+                name="my-datetime-local"
+              />
+
+              <h2>Email</h2>
+              <label for="my-email">Enter your email address:</label>
+              <input type="email" id="my-email" name="my-email" />
+
+              <h2>File Upload</h2>
+              <label for="my-file">Upload a file:</label>
+              <input type="file" id="my-file" name="my-file" />
+
+              <h2>Multiple File Upload</h2>
+              <label for="my-files">Upload files:</label>
+              <input type="file" id="my-files" name="my-files" multiple />
+
+              <h2>Image</h2>
+              <p><small>Uses an image to submit the form. This acts like a submit button.</small></p>
+              <input
+                type="image"
+                id="my-image"
+                alt="This is an image"
+                src="./assets/buttonImage.svg"
+              />
+
+              <h2>Month</h2>
+              <label for="my-month">Enter YYYY-MM:</label>
+              <input type="month" id="my-month" name="my-month" />
+
+              <h2>Number</h2>
+              <p><small>The <em>&#x3C;input type="number&#x3E;</em> element creates a field for entering numeric values, often with up/down controls and range limits. It will open the number entry on mobile.</small></p>
+              <label for="my-number">Enter a number between 0 and 5:</label>
+              <input
+                type="number"
+                id="my-number"
+                name="my-number"
+                min="0"
+                max="5"
+              />
+
+              <h2>Password</h2>
+              <p><small>The <em>&#x3C;input type="password"&#x3E;</em> element creates a field for entering a password, hiding the characters for privacy.</small></p>
+              <label for="my-password">Enter a password:</label>
+              <input type="password" id="my-password" name="my-password" />
+
+              <h2>Radio</h2>
+              <p><small>Use radios when a use can only select one thing</small></p>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="my-radio-red"
+                  name="my-radio-colour"
+                  value="red"
+                />
+                <label for="my-radio-red">Red</label>
+              </div>
+
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="my-radio-green"
+                  name="my-radio-colour"
+                  value="green"
+                />
+                <label for="my-radio-green">Green</label>
+              </div>
+
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="my-radio-blue"
+                  name="my-radio-colour"
+                  value="blue"
+                />
+                <label for="my-radio-blue">Blue</label>
+              </div>
+
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="my-radio-yellow"
+                  name="my-radio-colour"
+                  value="yellow"
+                  checked
+                />
+                <label for="my-radio-yellow">Yellow: Checked</label>
+              </div>
+
+              <h2>Range</h2>
+              <p><small>The <em>&#x3C;input type="range"&#x3E;</em> element creates a slider control for selecting a value within a specified range.</small></p>
+              <div class="range">
+                <input
+                  type="range"
+                  id="my-range"
+                  name="my-range"
+                  min="0"
+                  max="10"
+                />
+                <label for="my-range">Enter something between 0 and 10:</label>
+              </div>
+
+              <h2>Search</h2>
+              <p><small>The <em>&#x3C;input type="search"&#x3E;</em> element creates a search field, optimized for entering search queries.</p>
+              <label for="my-search">Search for something:</label></label>
+              <input
+                type="search"
+                name="my-search"
+                id="my-search"
+                aria-label="Search through the pages"
+              />
+
+              <h2>Telephone Number</h2>
+              <p><small>The <em>&#x3C;input type="tel"&#x3E;</em> element creates a field for entering a telephone number, often with mobile-optimized input.</small></p>
+              <label for="my-phone">Enter a phone number:</label>
+              <input type="tel" id="my-phone" name="my-phone" />
+
+              <h2>Text Input</h2>
+              <label for="my-text">Text input:</label>
+              <input type="text" id="my-text" name="my-text" />
+
+              <h2>Text Input (Required)</h2>
+              <label for="my-text-required">Text input (required):</label>
+              <input
+                type="text"
+                id="my-text-required"
+                name="my-text-required"
+                required
+              />
+
+              <h2>Time</h2>
+              <label for="my-time">Enter a time:</label>
+              <input type="time" id="my-time" name="my-time" />
+
+              <h2>URL</h2>
+              <label for="my-url">Enter a URL:</label>
+              <input
+                type="url"
+                id="my-url"
+                name="my-url"
+                placeholder="https://craigclark.ca"
+              />
+
+              <h2>Week</h2>
+              <label for="my-week">Choose a week:</label>
+              <input type="week" id="my-week" name="my-week" />
+            </fieldset>
+
+            <fieldset>
+              <legend>Other Form Elements</legend>
+
+              <h2>Meter</h2>
+              <p><small>The <em>&#x3C;meter&#x3E;</em> element represents a scalar measurement within a known range, such as a grade or progress level.</small></p>
+              Grade:
+              <meter
+                id="my-grade"
+                name="my-grade"
+                min="0"
+                max="100"
+                low="50"
+                high="100"
+                value="75"
+              ></meter>
+
+              <h2>Progress</h2>
+              Progress:
+              <progress id="my-progress" max="100" value="75">75%</progress>
+
+              <h2>Textarea</h2>
+              <label for="my-textarea">Enter some text here:</label>
+              <textarea
+                id="my-textarea"
+                name="my-textarea"
+                placeholder="Enter some text here…"
+              ></textarea>
+            </fieldset>
+
+            <h2>Submit</h2>
+            <p><small>
+              The submit button should be in the input type section, but it's at
+              the bottom because that's where we typically expect to see it.</small>
+            </p>
+            <input type="submit" value="Submit this form" />
+          </form>
+        </section>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <address>
+        555 Somestreet<br />
+        Iqaluit, Nunavut<br />
+        X0A 0H0<br />
+        <a href="mailto:example@example.com">example@example.com</a><br />
+        <a href="tel:+15555555555">(555) 555-5555</a>
+      </address>
+
+      <nav>
         <ul>
-          <li>A thing</li>
-          <li>Another thing</li>
-          <li>There's a thing here too</li>
-          <li>The last thing</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/craigclarkcc/"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 65 64.92"
+                aria-labelledby="icon-social-linkedin-title icon-social-linkedin-desc"
+                role="img"
+              >
+                <title id="icon-social-linkedin-title">LinkedIn</title>
+                <desc id="icon-social-linkedin-desc">Connect on LinkedIn</desc>
+                <path
+                  class="icon-social-linkedin"
+                  d="...LinkedIn SVG Path..."
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://pixabay.com/users/craigclark-1594966/"
+              aria-label="Pixabay"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 65 65"
+                aria-labelledby="icon-social-pixabay-title icon-social-pixabay-desc"
+                role="img"
+              >
+                <title id="icon-social-pixabay-title">Pixabay</title>
+                <desc id="icon-social-pixabay-desc">Get images on Pixabay</desc>
+                <path class="icon-social-pixabay" d="...Pixabay SVG Path..." />
+              </svg>
+            </a>
+          </li>
         </ul>
-
-        <h2>Mixed List</h2>
-        <ol>
-          <li>An unordered list
-            <ul>
-              <li>A thing</li>
-              <li>Another thing</li>
-              <li>There's a thing here too</li>
-              <li>The last thing</li>
-            </ul>
-          </li>
-          <li>Item 02</li>
-          <li>Another unordered list
-            <ul>
-              <li>A thing</li>
-              <li>An ordered list
-                <ol>
-                  <li>Item 01</li>
-                  <li>Item 02</li>
-                  <li>Item 03</li>
-                  <li>Item 04</li>
-                </ol>
-              </li>
-              <li>There's a thing here too</li>
-              <li>The last thing</li>
-            </ul>
-          </li>
-          <li>Item 04</li>
-        </ol>
-      </section>
-
-      <section id="inline-elements">
-        <h1>Inline Elements</h1>
-
-        <h2>Links</h2>
-        <p>This is an <a href="/index.html">internal link</a>.</p>
-        <p>This is an <a href="https://developer.mozilla.org/en-US/">external link</a>.</p>
-        <p>This is an <a href="mailto:clark.craig@gmail.com">email link</a>.</p>
-        <p>This is a <a href="./assets/DummyLetter.pdf">link to a PDF</a>.</p>
-        <p>This is a <a href="./assets/compressedFile.txt.zip">link to a .zip file</a>.</p>
-
-        <h2>Abbreviation</h2>
-        <p>Abbreviation: <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
-
-        <h2>Inline Code</h2>
-        <p>This is code: <code>cd ../styles/css</code></p>
-
-        <h2>Definition</h2>
-        <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
-
-        <h2>Strong Text</h2>
-        <p>This is <strong>strong text</strong>.</p>
-
-        <h2>Emphasis</h2>
-        <p>This text is <em>emphasized.</em></p>
-
-        <h2>Delete, Insert, Strike, and Marked (Highlighted)</h2>
-        <p>You can indicate that <del>this text has been deleted</del> and replaced with <ins>this text</ins>. 
-          <s>Strike</s> is different from deleting; it indicates something is no longer relevant. 
-          Text can also be <mark>highlighted</mark>.</p>
-
-        <h2>Small Text</h2>
-        <p><small>Small text is suitable for information such as disclaimers and copyright notices.</small></p>
-
-        <h2>Subscript and Superscript</h2>
-        <p>H<sub>2</sub>O</p>
-        <p>Here lies the 2<sup>nd</sup> fastest gun in the West.</p>
-
-        <h2>Keyboard Input</h2>
-        <p>On a Mac, press <kbd>command (⌘)</kbd> + <kbd>s</kbd> to save a document.</p>
-
-        <h2>Inline Quote</h2>
-        <p><q>What is all this lorem stuff</q> Aluki asked.</p>
-
-        <h2>Sample Computer Output</h2>
-        <p><kbd>⌘</kbd> + <kbd>s</kbd> + <kbd>shift</kbd></p>
-        <p><samp>Please select a destination to save your file.</samp></p>
-
-        <h2>Time</h2>
-        <p>Joe Strummer: <time datetime="1952-08-21">August 21, 1952</time> to <time datetime="2002-12-22">December 22,
-            2002</time></p>
-
-        <h2>Variables</h2>
-        <p>The area of a rectangle is <var>width</var> x <var>length</var>.</p>
-      </section>
-
-      <section id="multi-media">
-        <h1>Multimedia</h1>
-
-        <h2>Image</h2>
-        <img src="./assets/sampleImage.jpg" alt="Modern architecture seen from below" />
-
-        <h2>Figure</h2>
-        <figure>
-          <img src="./assets/sampleFigure.jpg" alt="Looking up at a building covered in multi-colored panels" />
-          <figcaption>This is a caption for the image inside a figure element.</figcaption>
-        </figure>
-
-        <h2>Picture</h2>
-        <picture>
-          <source media="(min-width:480px)" srcset="./assets/samplePicture960.jpg">
-          <source media="(min-width:960px)" srcset="./assets/samplePicture1140.jpg">
-          <source media="(min-width:1440px)" srcset="./assets/samplePicture1920.jpg">
-          <img src="./assets/samplePicture480.jpg" alt="Abstract" />
-        </picture>
-
-        <h2>Audio</h2>
-        <figure>
-          <audio controls src="./assets/sampleAudio.mp3" title="Impact Moderato">Your browser does not support 
-            <code>&#x3C;code&#x3E;</code>, You can <a href="./assets/sampleAudio.mp3">download the file
-              here</a>.
-          </audio>
-          <figcaption><em>Impact Moderato</em> by Kevin McLeod</figcaption>
-        </figure>
-
-        <h2>Video</h2>
-        <video controls src="./assets/sampleVideo.mp4" type="video/mp4">Your browser does not support 
-          <code>&#x3C;video&#x3E;</code>.
-        </video>
-
-        <h2>Embedded Content</h2>
-
-        <h3>Iframe</h3>
-        <iframe src="https://player.vimeo.com/video/144829896" width="640" height="360" frameborder="0" 
-          allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <p><small><em>Experimental Moves</em> from <a href="https://vimeo.com/deekay">Deekay</a>.</small></p>
-
-        <h3>Object</h3>
-        <object data="./assets/DummyLetter.pdf" type="application/pdf" width="100%" height="500px">
-          <a href="./assets/DummyLetter.pdf">Download the document</a>. You will need 
-          <a href="https://get.adobe.com/reader">Acrobat Reader</a> to view this document.
-        </object>
-
-        <h3>SVG</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="100" />
-        </svg>
-      </section>
-
-      <section id="interactive-elements">
-        <h1>Interactive Elements</h1>
-
-        <h2>Details</h2>
-        <details>
-          <summary>Secondary colors</summary>
-          The resulting color when two primary colors are mixed.
-        </details>
-      </section>
-
-      <section id="tables">
-        <h1>Tables</h1>
-        <div class="table">
-          <table>
-            <caption>This is the table caption. What happens when we mix colors?</caption>
-            <thead>
-              <tr>
-                <td><!--empty--></td>
-                <th scope="col">Red</th>
-                <th scope="col">Blue</th>
-                <th scope="col">Yellow</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Red</th>
-                <td>Red</td>
-                <td>Violet</td>
-                <td>Orange</td>
-              </tr>
-              <tr>
-                <th scope="row">Blue</th>
-                <td>Violet</td>
-                <td>Blue</td>
-                <td>Green</td>
-              </tr>
-              <tr>
-                <th scope="row">Yellow</th>
-                <td>Orange</td>
-                <td>Green</td>
-                <td>Yellow</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="form-elements">
-        <h1>Form Elements</h1>
-        <form action="get">
-          <fieldset>
-            <legend>Elements for Selecting</legend>
-
-            <h2>Data List</h2>
-            <label for="colour-choice">Choose a color:</label>
-            <input list="colour-choice" id="colour-choice" name="colour-choice" />
-            <datalist id="colour-choice">
-              <option value="Red">
-              <option value="Blue">
-              <option value="Yellow">
-              <option value="Violet">
-              <option value="Green">
-              <option value="Orange">
-            </datalist>
-
-            <h2>Select List</h2>
-            <label for="paint-select">Choose a type of paint:</label>
-            <select name="paint" id="paint-select">
-              <option value="">- Please choose a type of paint -</option>
-              <option value="oil">Oil</option>
-              <option value="acrylic">Acrylic</option>
-              <option value="water-colour">Water Colour</option>
-              <option value="tempra">Tempra</option>
-              <option value="encaustic">Encaustic</option>
-              <option value="latex">Latex</option>
-            </select>
-
-            <h2>Option Group</h2>
-            <label for="choose-a-colour">Choose a color:</label>
-            <select id="choose-a-colour">
-              <optgroup label="Primary Colors">
-                <option>Red</option>
-                <option>Yellow</option>
-                <option>Blue</option>
-              </optgroup>
-              <optgroup label="Secondary Colors">
-                <option>Green</option>
-                <option>Violet</option>
-                <option>Orange</option>
-              </optgroup>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <legend>Input Types</legend>
-
-            <h2>Button</h2>
-            <input type="button" value="Button Example">
-
-            <h2>Checkbox</h2>
-            <div class="checkbox">
-              <input type="checkbox" id="my-checkbox-red" name="my-red">
-              <label for="my-checkbox-red">Red</label>
-            </div>
-
-            <div class="checkbox">
-              <input type="checkbox" id="my-checkbox-blue-checked" name="my-checkbox-blue-checked" checked>
-              <label for="my-checkbox-blue-checked">Blue: Checked</label>
-            </div>
-
-            <h2>Color Picker</h2>
-            <input type="color" id="my-colour-picker" name="my-colour-picker" value="#009933">
-            <label for="my-colour-picker">Pick a color:</label>
-
-            <h2>Date</h2>
-            <label for="my-date">Select a date:</label>
-            <input type="date" id="my-date" name="my-date">
-
-            <h2>Date-Time (Local)</h2>
-            <label for="my-datetime-local">Select a date and time:</label>
-            <input type="datetime-local" id="my-datetime-local" name="my-datetime-local">
-
-            <h2>Email</h2>
-            <label for="my-email">Enter your email address:</label>
-            <input type="email" id="my-email" name="my-email">
-
-            <h2>File Upload</h2>
-            <label for="my-file">Upload a file:</label>
-            <input type="file" id="my-file" name="my-file">
-
-            <h2>Multiple File Upload</h2>
-            <label for="my-files">Upload files:</label>
-            <input type="file" id="my-files" name="my-files" multiple>
-
-            <h2>Image</h2>
-            <input type="image" id="my-image" alt="This is an image" src="./assets/buttonImage.svg">
-
-            <h2>Month</h2>
-            <label for="my-month">Enter YYYY-MM:</label>
-            <input type="month" id="my-month" name="my-month">
-
-            <h2>Number</h2>
-            <label for="my-number">Enter a number between 0 and 5:</label>
-            <input type="number" id="my-number" name="my-number" min="0" max="5">
-
-            <h2>Password</h2>
-            <label for="my-password">Enter a password:</label>
-            <input type="password" id="my-password" name="my-password">
-
-            <h2>Radio</h2>
-            <div class="radio">
-              <input type="radio" id="my-radio-red" name="my-radio-colour" value="red">
-              <label for="my-radio-red">Red</label>
-            </div>
-
-            <div class="radio">
-              <input type="radio" id="my-radio-green" name="my-radio-colour" value="green">
-              <label for="my-radio-green">Green</label>
-            </div>
-
-            <div class="radio">
-              <input type="radio" id="my-radio-blue" name="my-radio-colour" value="blue">
-              <label for="my-radio-blue">Blue</label>
-            </div>
-
-            <div class="radio">
-              <input type="radio" id="my-radio-yellow" name="my-radio-colour" value="yellow" checked>
-              <label for="my-radio-yellow">Yellow: Checked</label>
-            </div>
-
-            <h2>Range</h2>
-            <div class="range">
-              <input type="range" id="my-range" name="my-range" min="0" max="10">
-              <label for="my-range">Enter something between 0 and 10:</label>
-            </div>
-
-            <h2>Search</h2>
-            <label for="my-search">Search for something:</label>
-            <input type="search" name="my-search" id="my-search" aria-label="Search through the pages">
-
-            <h2>Telephone Number</h2>
-            <label for="my-phone">Enter a phone number:</label>
-            <input type="tel" id="my-phone" name="my-phone">
-
-            <h2>Text Input</h2>
-            <label for="my-text">Text input:</label>
-            <input type="text" id="my-text" name="my-text">
-
-            <h2>Text Input (Required)</h2>
-            <label for="my-text-required">Text input (required):</label>
-            <input type="text" id="my-text-required" name="my-text-required" required>
-
-            <h2>Time</h2>
-            <label for="my-time">Enter a time:</label>
-            <input type="time" id="my-time" name="my-time">
-
-            <h2>URL</h2>
-            <label for="my-url">Enter a URL:</label>
-            <input type="url" id="my-url" name="my-url" placeholder="https://craigclark.ca">
-
-            <h2>Week</h2>
-            <label for="my-week">Choose a week:</label>
-            <input type="week" id="my-week" name="my-week">
-          </fieldset>
-
-          <fieldset>
-            <legend>Other Form Elements</legend>
-
-            <h2>Meter</h2>
-            Grade:
-            <meter id="my-grade" name="my-grade" min="0" max="100" low="50" high="100" value="75">
-            </meter>
-
-            <h2>Progress</h2>
-            Progress:
-            <progress id="my-progress" max="100" value="75"> 75% </progress>
-
-            <h2>Textarea</h2>
-            <label for="my-textarea">Enter some text here:</label>
-            <textarea id="my-textarea" name="my-textarea" placeholder="Enter some text here…"></textarea>
-
-          </fieldset>
-
-          <h2>Submit</h2>
-          <p>The submit button should be in the input type section, but it's at the bottom because that's where we 
-            typically expect to see it.</p>
-          <input type="submit" value="Submit this form">
-        </form>
-      </section>
-    </article>
-  </main>
-  <hr>
-  <footer>
-    <address>
-      555 Somestreet<br />
-      Iqaluit, Nunavut<br />
-      X0A 0H0<br />
-      <a href="mailto:example@example.com">example@example.com</a><br />
-      <a href="tel:+15555555555">(555) 555-5555</a>
-    </address>
-
-    <nav>
-      <ul>
-        <li><a href="https://gitlab.com/craigatcrow" aria-label="GitLab">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 60.11" aria-labelledby="icon-social-gitlab-title icon-social-gitlab-desc" role="img">
-            <title id="icon-social-gitlab-title">GitLab</title>
-            <desc id="icon-social-gitlab-desc">Follow on GitLab</desc>
-            <path class="icon-social-gitlab" d="...GitLab SVG Path..." />
-          </svg>
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/craigclarkcc/" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64.92" aria-labelledby="icon-social-linkedin-title icon-social-linkedin-desc" role="img">
-            <title id="icon-social-linkedin-title">LinkedIn</title>
-            <desc id="icon-social-linkedin-desc">Connect on LinkedIn</desc>
-            <path class="icon-social-linkedin" d="...LinkedIn SVG Path..." />
-          </svg>
-        </a></li>
-        <li><a href="https://twitter.com/craigatcrow" aria-label="Twitter">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 52.79" aria-labelledby="icon-social-twitter-title icon-social-twitter-desc" role="img">
-            <title id="icon-social-twitter-title">Twitter</title>
-            <desc id="icon-social-twitter-desc">Follow on Twitter</desc>
-            <path class="icon-social-twitter" d="...Twitter SVG Path..." />
-          </svg>
-        </a></li>
-        <li><a href="https://pixabay.com/users/craigclark-1594966/" aria-label="Pixabay">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" aria-labelledby="icon-social-pixabay-title icon-social-pixabay-desc" role="img">
-            <title id="icon-social-pixabay-title">Pixabay</title>
-            <desc id="icon-social-pixabay-desc">Get images on Pixabay</desc>
-            <path class="icon-social-pixabay" d="...Pixabay SVG Path..." />
-          </svg>
-        </a></li>
-      </ul>
-    </nav>
-  </footer>
-  <a href="#header" id="totop">Top</a>
-</body>
-
+      </nav>
+    </footer>
+    <a href="#header" id="totop">Top</a>
+  </body>
 </html>
