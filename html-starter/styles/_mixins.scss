@@ -1,7 +1,0 @@
-//mixins
-
-@mixin responsive($size: $screen-xs) {
-  @media only screen and (min-width: $size) {
-    @content;
-  }
-}
